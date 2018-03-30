@@ -439,6 +439,7 @@ create = (options = {}) ->
           ## and in the future if this is redefined
           ## then just back it up
           Object.defineProperty(xhr, prop, {
+            configurable: true
             get: ->
               bak = fns[prop]
 
